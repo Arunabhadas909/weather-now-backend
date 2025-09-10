@@ -5,7 +5,9 @@ import cors from "cors";
 const app = express();
 
 
-app.use(cors());
+app.use(cors({
+  origin: ["https://weather-now-6khm.onrender.com","https://arun-weather-now-app.netlify.app"]
+}));
 
 const PORT = process.env.PORT || 5000;
 
